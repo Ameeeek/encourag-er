@@ -1,13 +1,23 @@
 import './App.css';
 import './index.css';
 import Navbar from './Navbar';
+import Home from './home';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 function App() {
   return (
-    <div className="p-4">
+    <div className="bg-secondary w-screen h-screen">
       <BrowserRouter>
       <Navbar />
+
+      <Switch>
+
+        <Route path="/home" exact>
+        <Home/>
+        </Route>
+        
+      </Switch>
       </BrowserRouter>
+
     </div>
   );
 }

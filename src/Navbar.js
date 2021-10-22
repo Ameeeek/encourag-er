@@ -2,14 +2,12 @@ import {Link} from 'react-router-dom';
 
 const navBar = () => {
     return (
-        <div className="container flex justify-between">
-            <div className="logo-container">
-                <p>encourag-er</p>
+        <div className="container flex justify-between p-4">
+            <div className="logo-container font-pacifico text-primary shadow-lg">
+                <p class="text-5xl">encourag-er</p>
             </div>
-            <div className="navbar-links flex text-lg">
-                <Link  to="/about" class="mx-3 hover:text-white hover:bg-indigo-600 ease-linear duration-150">Home</Link>
-                <Link  to="/sign-up" class="mx-3 hover:text-white hover:bg-indigo-600 ease-linear duration-150">Sign Up</Link>
-                <Link  to="/Login" class="mx-3">Login</Link>
+            <div className="navbar-links font-hammer flex text-4xl ">
+                <Link  to="/home" class="mx-3 text-primary hover:text-secondary hover:bg-primary ease-linear duration-100">Home</Link>
             </div>
         </div>
     )
