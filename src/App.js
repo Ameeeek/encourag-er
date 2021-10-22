@@ -9,18 +9,13 @@ function App() {
   return (
     <div className="bg-secondary w-full h-screen ">
       <BrowserRouter>
-      <Navbar />
-
-      <Switch>
-
-        <Route path="/home" exact>
-        
-        <Home/>
-        </Route>
-        
-      </Switch>
+        <Navbar />
+        <Switch>
+          <Route path="/home" exact>
+            <Home/>
+          </Route>
+        </Switch>
       </BrowserRouter>
-
     </div>
   );
 }
