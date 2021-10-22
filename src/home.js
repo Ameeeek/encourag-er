@@ -19,7 +19,7 @@ const home = () =>{
                 </div>
                 <div className="flex ">
                 <a href="#"><FooterIcon icon={<SiFacebook size="30" className="mr-4"/>}/></a>
-                <a href="#"><FooterIcon   icon={<SiTwitter size="30" className="mx-4"/>}/></a>
+                <a href="https://twitter.com/Ameeeekk"><FooterIcon   icon={<SiTwitter size="30" className="mx-4"/>}/></a>
                 </div>
             </div>
         </div> 
