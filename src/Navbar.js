@@ -9,6 +9,7 @@ const navBar = () => {
             <div className="navbar-links font-hammer flex text-4xl ">
                 <Link  to="/home" class="mx-3 text-primary hover:text-secondary hover:bg-primary ease-linear duration-100">Home</Link>
             </div>
+            
         </div>
     )
 }
