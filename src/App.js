@@ -3,7 +3,6 @@ import './index.css';
 import Navbar from './Navbar';
 import React from 'react';
 import Home from './home';
-import Main from './main';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 function App() {
   return (
@@ -14,11 +13,13 @@ function App() {
           <Route path="/home" exact>
             <Home/>
           </Route>
-          <Route path="/main" exact>
-            <Main />
-          </Route>
         </Switch>
       </BrowserRouter>
+      <div className="justify-evenly flex">
+            <p class="text-center bg-white p-12 font-hammer text-base">lorem ipsum dolor sit amet, consectetur adip</p>
+            <p class="text-center bg-white p-12 font-hammer text-base">lorem ipsum dolor sit amet, consectetur adip</p>
+            <p class="text-center bg-white p-12 font-hammer text-base">lorem ipsum dolor sit amet, consectetur adip</p>
+        </div>
     </div>
   );
 }
