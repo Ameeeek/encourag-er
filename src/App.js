@@ -1,10 +1,22 @@
 import './App.css';
 import './index.css';
-import Navbar from './Navbar';
+import Navbar from './Navbar.jsx';
 import React from 'react';
-import Home from './home';
+import { useState} from 'react';
+import Home from './home.jsx';
+import Utama from './main.jsx';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 function App() {
+
+  const [quote, setQuote] = useState([
+    {_id: 1, isi:"Never give up", by: "amek"},
+    {_id: 2, isi:"be yourself", by: "amek"},
+    {_id: 3, isi:"aowkoawkowakwaokawokwaowakowakoawkwaokawowakowako", by: "amek"},
+    {_id: 4, isi:"awokaowk", by: "amek"},
+    {_id: 5, isi:"be wlskaowiswosmwa9e812931", by: "amek"},
+    {_id: 6, isi:"swaoskaowskawopskawpslapwsoawpsow", by: "amek"},
+  ])
+
   return (
     <div className="bg-secondary w-full h-screen ">
       <BrowserRouter>
@@ -15,17 +27,7 @@ function App() {
           </Route>
         </Switch>
       </BrowserRouter>
-      <div className="justify-evenly flex-wrap  flex">
-            <p class="text-center mx-4 my-4 bg-white p-12 font-hammer text-base">lorem ipsum dolor sit amet, consectetur adip</p>
-            <p class="text-center mx-4 my-4  max-w-2xl bg-white p-12 font-hammer text-base">lorem ipsum dolor sit amet, consectetur adip </p>
-            <p class="text-center mx-4 my-4  bg-white p-12 font-hammer text-base">lorem ipsum dolor sit amet, consectetur adip</p>
-            <p class="text-center mx-4 my-4  bg-white p-12 font-hammer text-base">lorem ipsum dolor sit amet, consectetur adip</p>
-            <p class="text-center mx-4 my-4  bg-white p-12 font-hammer text-base">lorem ipsum dolor sit amet, consectetur adip</p>
-            <p class="text-center mx-4 my-4  bg-white p-12 font-hammer text-base">lorem ipsum dolor sit amet, consectetur adip</p>
-            <p class="text-center mx-4 my-4  bg-white p-12 font-hammer text-base">lorem ipsum dolor sit amet, consectetur adip</p>
-            <p class="text-center mx-4 my-4  bg-white p-12 font-hammer text-base">lorem ipsum dolor sit amet, consectetur adip</p>
-            <p class="text-center  mx-4 my-4 bg-white p-12 font-hammer text-base">lorem ipsum dolor sit amet, consectetur adip</p>
-        </div>
+        <Utama quoteList={quote}/>
     </div>
   );
 }
