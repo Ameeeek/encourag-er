@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       fontFamily:{
         'pacifico' : 'pacifico',
-        'hammer': 'Hammersmith One'
+        'hammer': 'Hammersmith One',
+        'kutip' : 'Catamaran'
       },
       colors: {
         primary: '#C243A7',
@@ -13,6 +14,9 @@ module.exports = {
         secondary: '#212121',
         ungu: '#DB97FF',
         hijau: '#BBFF97'
+      },
+      screens:{
+        'hp': {'max' : '360px'}
       }
     },
   },

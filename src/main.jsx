@@ -1,21 +1,19 @@
-const utama = ({quoteList}) =>{
-    console.log(quoteList)
+const utama = ({quoteList}) =>{     // {quotelist merupakan prop dari parent file yang berisi list object nested array quote}
     return (
         <div className="justify-evenly flex-wrap  flex">
-            {quoteList.map((quote) => (
-                <div className="cards mx-4 my-4 bg-white font-hammer">
-                    <p className="p-2 text-2xl">
+            {quoteList.map((quote) => ( // quoteList.map merupakan fungsi iterasi/loop untuk mengakses isi dari quoteList dan berisi parameter quote
+                <div className="cards mx-4 my-4 w-96 bg-white ">
+                    <p className="p-2 font-kutip text-4xl">
                         "
                     </p>
-                    <p className="text-center  p-12  text-base">{quote.isi}</p>
-                    <p className="p-2 text-right text-2xl">
+                    <p className="text-center  p-12 font-hammer max-w-4xl text-base">{quote.isi}<br/>-{quote.by} </p>
+                    <p className="p-2 font-kutip text-right text-4xl">
                         "
                     </p>
                 </div>
             ))}
-                
         </div>
     )
-}
+}   
 
 export default utama;
