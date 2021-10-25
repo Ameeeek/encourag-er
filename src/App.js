@@ -15,10 +15,11 @@ function App() {
           </Route>
         </Switch>
       </BrowserRouter>
-      <div className="justify-evenly flex">
-            <p class="text-center bg-white p-12 font-hammer text-base">lorem ipsum dolor sit amet, consectetur adip</p>
-            <p class="text-center bg-white p-12 font-hammer text-base">lorem ipsum dolor sit amet, consectetur adip</p>
-            <p class="text-center bg-white p-12 font-hammer text-base">lorem ipsum dolor sit amet, consectetur adip</p>
+      <div className="justify-evenly flex-wrap flex">
+            <p class="text-center mx-4 my-4 bg-white p-12 font-hammer text-base">lorem ipsum dolor sit amet, consectetur adip</p>
+            <p class="text-center mx-4 my-4   bg-white p-12 font-hammer text-base">lorem ipsum dolor sit amet, consectetur adip</p>
+            <p class="text-center mx-4 my-4  bg-white p-12 font-hammer text-base">lorem ipsum dolor sit amet, consectetur adip</p>
+            <p class="text-center  mx-4 my-4 bg-white p-12 font-hammer text-base">lorem ipsum dolor sit amet, consectetur adip</p>
         </div>
     </div>
   );
