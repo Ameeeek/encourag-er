@@ -1,3 +1,4 @@
+
 const utama = ({quoteList}) =>{     // {quotelist merupakan prop dari parent file yang berisi list object nested array quote}
     return (
         <div className="justify-evenly flex-wrap  flex">
@@ -12,8 +13,12 @@ const utama = ({quoteList}) =>{     // {quotelist merupakan prop dari parent fil
                     </p>
                 </div>
             ))}
+            
         </div>
+
     )
+    
 }   
+
 
 export default utama;

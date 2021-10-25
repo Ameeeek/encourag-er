@@ -6,8 +6,9 @@ import { useState} from 'react'; // import useState dari react
 import Home from './home.jsx'; // import halaman home dari file home.jsx
 import Utama from './main.jsx'; // import halaman utama dari file main.jsx
 import {BrowserRouter, Switch, Route} from 'react-router-dom'; //react router DOM untuk melakukan link dan routing untuk pindah page
-
+import Add from './add.jsx';
 function App() {
+  
   // parameter quote adalah nama dari data untuk quote dan set quote merupakan function (fungsi) untuk menambah quote
   const [quote, setQuote] = useState([
     {_id: 1, isi:`I love you, even if you don't love yourself,
@@ -21,7 +22,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Switch>
-          <Route path="/home" exact>
+          <Route path="/home" exact> {/* routing menuju ke home page*/ }
             <Home/>
           </Route>
         </Switch>
@@ -29,6 +30,7 @@ function App() {
           <Utama path="/main" quoteList={quote}/> {/* quoteList={quote} berfungsi bila ingin mengoper data ke file child, bisa di dideklarasi dengan prop quoteList*/}
         </Switch>
       </BrowserRouter>
+      <Add className="absolute" />
     </div>
   );
 }
