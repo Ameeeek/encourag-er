@@ -2,9 +2,12 @@ import {Link} from 'react-router-dom'; // {Link} berguna untuk routing pada pare
 import {BsGithub, BsPlus} from 'react-icons/bs'; 
 import React from 'react';
 import Tippy from '@tippyjs/react';
-import 'tippy.js/dist/tippy.css'; // optional
+import 'tippy.js/dist/tippy.css'; 
+
+
 
 const navBar = () => {
+
     return (
         <div className="container flex justify-between p-4">
             <div className="logo-container flex font-pacifico text-primary filter drop-shadow-2xl">
@@ -17,6 +20,7 @@ const navBar = () => {
             <StringContent icon={<BsPlus size="38"/>}/>
             </button>
             </div>
+            
         </div>
     )
 }

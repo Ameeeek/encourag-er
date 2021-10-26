@@ -6,7 +6,6 @@ import { useState} from 'react'; // import useState dari react
 import Home from './home.jsx'; // import halaman home dari file home.jsx
 import Utama from './main.jsx'; // import halaman utama dari file main.jsx
 import {BrowserRouter, Switch, Route} from 'react-router-dom'; //react router DOM untuk melakukan link dan routing untuk pindah page
-import Add from './add.jsx';
 function App() {
   
   // parameter quote adalah nama dari data untuk quote dan set quote merupakan function (fungsi) untuk menambah quote
@@ -20,7 +19,10 @@ function App() {
     {_id: 3, isi:`Don't beat yourself up over a choice you made in the past, You did what felt right at that time, you did your best`, by: "amek"},
     {_id: 3, isi:`Don't beat yourself up over a choice you made in the past, You did what felt right at that time, you did your best`, by: "amek"},
   ])
-
+  function storeData(inputQuote){
+    console.log(inputQuote);
+    alert("quote telah ditambahkan")
+  }
   return (
     <div className="bg-secondary w-full h-full ">
       <BrowserRouter>
@@ -31,7 +33,7 @@ function App() {
           </Route>
         </Switch>
         <Switch>
-          <Utama path="/main" quoteList={quote}/> {/* quoteList={quote} berfungsi bila ingin mengoper data ke file child, bisa di dideklarasi dengan prop quoteList*/}
+          <Utama path="/main" quoteList={quote} store={storeData}/> {/* quoteList={quote} berfungsi bila ingin mengoper data ke file child, bisa di dideklarasi dengan prop quoteList*/}
         </Switch>
       </BrowserRouter>
     </div>
