@@ -13,11 +13,8 @@ const utama = ({quoteList}) =>{     // {quotelist merupakan prop dari parent fil
                     </p>
                 </div>
             ))}
-            
         </div>
-
     )
-    
 }   
 
 

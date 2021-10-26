@@ -15,10 +15,14 @@ function App() {
       so don't give up yet`, by: "amek"},
     {_id: 2, isi:`Push yourself, no one's gonna do it for you`, by: "amek"},
     {_id: 3, isi:`Don't beat yourself up over a choice you made in the past, You did what felt right at that time, you did your best`, by: "amek"},
+    {_id: 3, isi:`Don't beat yourself up over a choice you made in the past, You did what felt right at that time, you did your best`, by: "amek"},
+    {_id: 3, isi:`Don't beat yourself up over a choice you made in the past, You did what felt right at that time, you did your best`, by: "amek"},
+    {_id: 3, isi:`Don't beat yourself up over a choice you made in the past, You did what felt right at that time, you did your best`, by: "amek"},
+    {_id: 3, isi:`Don't beat yourself up over a choice you made in the past, You did what felt right at that time, you did your best`, by: "amek"},
   ])
 
   return (
-    <div className="bg-secondary w-full h-screen ">
+    <div className="bg-secondary w-full h-full ">
       <BrowserRouter>
         <Navbar />
         <Switch>
@@ -30,7 +34,6 @@ function App() {
           <Utama path="/main" quoteList={quote}/> {/* quoteList={quote} berfungsi bila ingin mengoper data ke file child, bisa di dideklarasi dengan prop quoteList*/}
         </Switch>
       </BrowserRouter>
-      <Add className="absolute" />
     </div>
   );
 }
