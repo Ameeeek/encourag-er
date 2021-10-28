@@ -1,0 +1,7 @@
+penjelasan dependencies dan file yang digunakan
+
+1. express web framework
+2. mongoose untuk memudahkan terhubung dengan MongoDB
+3. cors cross-origin resource sharing 
+4. morgan untuk menampilkan request dalam terminal
+

@@ -25,7 +25,7 @@ const Tambah = ({store}) =>{
                 <textarea id="messages" type="text" name="quote" className="w-96 h-48 border-b  text-black bg-transparent my-2" placeholder="write your message here" onChange={handleQuote}/>
             </div>
             <div className="grid place-items-stretch text-center relative">
-                <input type="text" name="your" className="peer border-b focus:outline-none relate w-96 h-12 bg-transparent text-black my-2" placeholder="Your name" onChange={handleAuthor}/>
+                <input type="text" name="by" className="peer border-b focus:outline-none relate w-96 h-12 bg-transparent text-black my-2" placeholder="Your name" onChange={handleAuthor}/>
 
             </div>
             <div className="grid place-items-end  my-4 text-2xl ease-linear duration-100 ">
