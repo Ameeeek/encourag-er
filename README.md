@@ -3,9 +3,13 @@
 website to write encouraging messages
 
 ## overview
-<img src="Capture45623.PNG" />
-<img src="Capture456.PNG" />
+Main page
 <img src="Capture4563.PNG" />
+Messages 
+<img src="Capture456.PNG" />
+Add messages page
+<img src="Capture45623.PNG" />
+
 
 ## libraries/framework used
 
