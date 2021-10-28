@@ -12,7 +12,7 @@ const Utama = ({quoteList}) => {    // {quotelist merupakan prop dari parent fil
                     <p className="p-2 font-kutip text-4xl">
                         "
                     </p>
-                    <p className="text-center  p-12 font-hammer max-w-4xl text-base">{quote.isi}<br/>-{quote.by} </p>
+                    <p className="text-center  p-12 font-hammer max-w-4xl text-base">{quote.quote}<br/>-{quote.by} </p>
                     <p className="p-2 font-kutip text-right text-4xl">
                         "
                     </p>

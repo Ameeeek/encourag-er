@@ -4,4 +4,7 @@ penjelasan dependencies dan file yang digunakan
 2. mongoose untuk memudahkan terhubung dengan MongoDB
 3. cors cross-origin resource sharing 
 4. morgan untuk menampilkan request dalam terminal
-
+5. server.js untuk menjalankan server
+6. db.js koneksi ke DB
+7. model.js mengatur hubungan dengan databases
+8. routes.js mengatur route request
