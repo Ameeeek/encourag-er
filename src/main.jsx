@@ -5,7 +5,10 @@ const Utama = ({quoteList}) => {    // {quotelist merupakan prop dari parent fil
 
 
     return (
-        <div className="justify-evenly flex-wrap   flex">
+        <div className="bg-secondary w-full h-screen">
+            
+            <div className=" justify-evenly flex-wrap flex">
+
             {quoteList.map((quote) => ( 
                 // quoteList.map merupakan fungsi iterasi/loop untuk mengakses isi dari quoteList dan berisi parameter quote
                 <div className="cards mx-4 my-4 w-96 bg-white ">
@@ -18,6 +21,7 @@ const Utama = ({quoteList}) => {    // {quotelist merupakan prop dari parent fil
                     </p>
                 </div>
             ))}
+            </div>
         </div>
     )
 }   
