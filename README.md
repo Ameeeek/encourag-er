@@ -19,11 +19,12 @@ NodeJS
 React
 nodemon
 wavify
-
+tailwindcss 
 ## how to use my project
 
 ```
 open encourag-er directory 
+npm install tailwindcss
 npm i axios
 npm install react-wavify
 run npm start
