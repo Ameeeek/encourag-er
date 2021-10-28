@@ -6,7 +6,7 @@ import 'tippy.js/dist/tippy.css';
 
 
 
-const navBar = () => {
+const NavBar = () => {
 
     return (
         <div className="container flex justify-between p-4">
@@ -16,9 +16,8 @@ const navBar = () => {
             </div>
             <div className="navbar-links font-hammer   flex text-4xl ">
                 <Link  to="/home" class="mx-3 hp:text-xl text-primary p-4 hover:text-secondary rounded-t-2xl hover:bg-primary ease-linear duration-100">Home</Link>
-            <button className="text-primary hover:bg-primary hover:text-white  pb-2 pt-4 p-2 rounded-t-2xl">
-            <StringContent icon={<BsPlus size="38"/>}/>
-            </button>
+                <Link to="/tambah" class="mx-3 hp:text-xl text-primary p-4 hover:text-secondary rounded-t-2xl hover:bg-primary ease-linear duration-100"><StringContent icon={<BsPlus size="38"/>}/></Link>
+            
             </div>
             
         </div>
@@ -36,4 +35,4 @@ const StringContent = ({icon}) => (
       <button>{icon}</button>
     </Tippy>
   );
-export default navBar;
+export default NavBar;

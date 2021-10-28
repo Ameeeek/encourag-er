@@ -1,6 +1,6 @@
 import {Link} from 'react-router-dom'; // {Link} berguna untuk routing pada parent app 
 import Wave from 'react-wavify'; // wave merupakan library untuk animasi wave 
-const home = () =>{
+const Home = () =>{
     return(
         <div className="bg-secondary  mt-12 flex flex-col items-center ">
             <h3 className="text-4xl text-center my-8 font-pacifico  z-50 text-ungu"> hello beautiful soul</h3>
@@ -11,4 +11,4 @@ const home = () =>{
     );
 }
 
-export default home;
+export default Home;
