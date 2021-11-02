@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import {Link} from 'react-router-dom';
 const Tambah = ({store}) =>{
     
     const [inputQuote, setInputQuote] = useState();
@@ -28,6 +29,9 @@ const Tambah = ({store}) =>{
             </div>
             <div className="grid place-items-end  my-4 text-2xl ease-linear duration-100 ">
                 <input type="submit" className="bg-primary hover:bg-secondary text-secondary hover:text-primary cursor-pointer  font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" value="Submit"/>
+            </div>
+            <div className="grid place-items-end  my-4 text-2xl ease-linear duration-100 ">
+                <Link to="/main" className="bg-primary hover:bg-secondary text-secondary hover:text-primary cursor-pointer  font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Show me the message</Link>
             </div>
         </form>
     </div>

@@ -29,12 +29,12 @@ function App() {
   }
   function storeData(inputQuote){
     console.log(inputQuote);
-    alert("quote telah ditambahkan")
+    // alert("quote telah ditambahkan")
     axios 
     .post("http://localhost:4000/quote/add",inputQuote)
     .then((res)=>{
       setQuote((prevQuotes) => [...prevQuotes, inputQuote]);
-      alert("buku telah ditambahkan")
+      // alert("buku telah ditambahkan")
     })
     .catch((error) =>{
       console.log(error.response.data);
