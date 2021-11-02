@@ -1,6 +1,6 @@
 const mongoose = require('mongoose'); // deklarasi penggunaan mongoose
-
-mongoose.connect("mongodb://localhost:27017/db_quote",{ //koneksi menuju mongoDB dengan database db_quote
+const password = "ooSAxWYCC1ilaR6L"
+mongoose.connect(`mongodb+srv://Amek:${password}@cluster0.rjp8w.mongodb.net/test`,{ //koneksi menuju mongoDB dengan database db_quote
 });
 
 const db = mongoose.connection; // menghubungkan MongoDB
