@@ -19,7 +19,7 @@ function App() {
   }, [])
   function retrieveData(){
     axios
-    .get("http://localhost:4000/quote")
+    .get("https://encourag-er.herokuapp.com/quote")
     .then((response) => {
       setQuote(response.data);
     })
@@ -31,7 +31,7 @@ function App() {
     console.log(inputQuote);
     // alert("quote telah ditambahkan")
     axios 
-    .post("http://localhost:4000/quote/add",inputQuote)
+    .post("https://encourag-er.herokuapp.com/quote/add",inputQuote)
     .then((res)=>{
       setQuote((prevQuotes) => [...prevQuotes, inputQuote]);
       // alert("buku telah ditambahkan")
