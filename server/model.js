@@ -10,4 +10,4 @@ const bookSchema = new Schema (
     { collection: "koleksiQuote"}
 );
 
-module.exports = mongoose.model("QuoteModel", bookSchema);
+module.exports = mongoose.model("Quote", bookSchema)

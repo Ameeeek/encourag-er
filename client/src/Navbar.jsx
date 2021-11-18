@@ -15,9 +15,9 @@ const NavBar = () => {
             <a className="p-4 ml-4 text-primary" href="https://github.com/Ameeeek/encourag-er"><TopIcon  icon={<BsGithub size="40"/>}/></a>
             </div>
             <div className="navbar-links font-hammer   flex text-4xl ">
-                <Link  to="/home" class="mx-3 hp:text-xl text-primary p-4 hover:text-secondary rounded-t-2xl hover:bg-primary ease-linear duration-100">Home</Link>
+                <Link  to="/" class="mx-3 hp:text-xl text-primary p-4 hover:text-secondary rounded-t-2xl hover:bg-primary ease-linear duration-100">Home</Link>
                 <Link to="/tambah" class="mx-3 hp:text-xl text-primary p-4 hover:text-secondary rounded-t-2xl hover:bg-primary ease-linear duration-100"><StringContent icon={<BsPlus size="38"/>}/></Link>
-            
+                
             </div>
             
         </div>

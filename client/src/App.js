@@ -22,6 +22,7 @@ function App() {
     .get("https://encourag-er.herokuapp.com/quote")
     .then((response) => {
       setQuote(response.data);
+      console.log(response.data)
     })
     .catch(function(error){
       console.log(error)
@@ -47,7 +48,7 @@ function App() {
         <Navbar />
 
         <Switch>
-          <Route path="/home" exact> {/* routing menuju ke home page*/ }
+          <Route path="/" exact> {/* routing menuju ke home page*/ }
             <Home/>
           </Route>
         </Switch>

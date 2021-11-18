@@ -16,7 +16,7 @@ module.exports = {
         hijau: '#BBFF97'
       },
       screens:{
-        'hp': {'max' : '360px'}
+        'hp': {'max' : '858px'}
       }
     },
   },

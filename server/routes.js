@@ -1,13 +1,13 @@
 const akses = require("express").Router();
-const QuoteModel = require("./model");
+const Quote = require("./model");
 
 akses.route("/").get((req,res) =>{
-    QuoteModel.find()
+    Quote.find()
     .then((quotes) => res.status(200).json(quotes))
     .catch((error) => res.status(400).json(error.message));
 });
 akses.route("/add").post((req, res)=>{
-    QuoteModel.find()
+    Quote.create(req.body)
     .then((createdQuote) => res.status(200).json(createdQuote))
     .catch((error) => res.status(400).json(error.message));
 })
