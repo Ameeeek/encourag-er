@@ -3,6 +3,7 @@ import './index.css';
 import Navbar from './Navbar.jsx'; // import navbar dari file navbar.jsx
 import React from 'react'; 
 import Tambah from './tambah.jsx';
+import Loading from './loading.jsx';
 import { useState} from 'react'; // import useState dari react
 import { useEffect} from 'react';
 import Home from './home.jsx'; // import halaman home dari file home.jsx
@@ -13,9 +14,11 @@ function App() {
   
   // parameter quote adalah nama dari data untuk quote dan set quote merupakan function (fungsi) untuk menambah quote
   const [quote, setQuote] = useState([]);
-
+  const [loading, setLoading] = useState(true);
   useEffect(() =>{
+    
     retrieveData()
+    setLoading(false)
   }, [])
   function retrieveData(){
     axios
@@ -35,7 +38,7 @@ function App() {
     .post("https://encourag-er.herokuapp.com/quote/add",inputQuote)
     .then((res)=>{
       setQuote((prevQuotes) => [...prevQuotes, inputQuote]);
-      // alert("buku telah ditambahkan")
+      // alert("quote telah ditambahkan")
     })
     .catch((error) =>{
       console.log(error.response.data);
@@ -49,13 +52,17 @@ function App() {
 
         <Switch>
           <Route path="/" exact> {/* routing menuju ke home page*/ }
-            <Home/>
+            <Home className="w-full h-screen"/>
           </Route>
         </Switch>
 
         <Switch>
           <Route path="/main" > {/* quoteList={quote} berfungsi bila ingin mengoper data ke file child, bisa di dideklarasi dengan prop quoteList*/}
-            <Utama  quoteList={quote} /> 
+            {loading ? 
+          <Loading />
+            : 
+          <Utama  quoteList={quote} />
+          }
           </Route>
         </Switch>
 
